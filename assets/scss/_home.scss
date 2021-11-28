@@ -4,12 +4,12 @@
     width: 100%;
     height: 100vh;
     .welcome-menu{
-        background: lightblue;
+        background: $white;
         padding: 50px;
         display: flex;
         flex-direction: column;
         .logo {
-            background: lightsalmon;
+            // background: lightsalmon;
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
@@ -20,7 +20,7 @@
         }
 
         .menu {
-            background: lightgrey;
+            // background: lightgrey;
             margin-top: auto;
             margin-bottom: auto;
             .menu-title {
@@ -55,31 +55,41 @@
 
         .social-icons {
             display: flex;
-            background: lightgoldenrodyellow;
+            // background: lightgoldenrodyellow;
             margin-bottom: auto;
             margin-top: auto;
+
             a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: $s-icons;
-                font-size: .9rem;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
                 text-decoration: none;
-                height: 30px;
-                width: 30px;
-                border-radius: 50px;
                 margin-right: 10px;
+
+                span {
+
+                    i.fa-stack-2x {
+                        color: $grey;
+                    }
+
+                    i.fa-stack-1x {
+                        color: $white;
+                    }
+                }
                 
             }
+
         }
 
         .contact {
-            background: lightgrey;
+            // background: lightgrey;
             margin-top: auto;
 
             .location {
                 color: $blue;
                 margin-bottom: 1rem;
+                letter-spacing: 0.1em;
+                line-height: 1.6;
 
             }
 
@@ -95,11 +105,20 @@
         }
     }
     .welcome-jumbo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1469a8+0,00345c+100 */
         background: $blue; /* Old browsers */
         background: -moz-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* FF3.6-15 */
         background: -webkit-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
         background: radial-gradient(ellipse at center,  $blue 0%,$dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='$dark-blue',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        img {
+            max-width: 600px;
+            max-height: 80%vh;
+            // background: darkcyan;
+        }
     }
 }
