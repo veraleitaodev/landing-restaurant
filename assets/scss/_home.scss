@@ -1,124 +1,123 @@
 #welcome {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100vh;
     .welcome-menu{
-        background: $white;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        .logo {
-            // background: lightsalmon;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-            img {
-                max-width: 150px;
-            }
+        grid-column: 1 / 5;
+        // background: $white;
+        // padding: 50px;
+        // display: flex;
+        // flex-direction: column;
+        // .logo {
+        //     // background: lightsalmon;
+        //     display: flex;
+        //     justify-content: center;
+        //     margin-bottom: 50px;
+        //     img {
+        //         max-width: 150px;
+        //     }
             
-        }
+        // }
 
-        .menu {
-            // background: lightgrey;
-            margin-top: auto;
-            margin-bottom: auto;
-            .menu-title {
-                text-transform: uppercase;
-                color: $blue;
-                font-weight: 700;
-                font-size: 1.2rem;
-                border-bottom: 1px solid $grey;
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-            }
+        // .menu {
+        //     // background: lightgrey;
+        //     margin-top: auto;
+        //     margin-bottom: auto;
+        //     .menu-title {
+        //         text-transform: uppercase;
+        //         color: $blue;
+        //         font-weight: 700;
+        //         font-size: 1.2rem;
+        //         border-bottom: 1px solid $grey;
+        //         padding-bottom: 20px;
+        //         margin-bottom: 20px;
+        //     }
 
-            .links {
+        //     .links {
 
-                li {
-                    a{
-                        font-size: 1.1rem;
-                        color: $black;
-                        font-weight: 700;
-                        text-decoration: none;
-                        margin-bottom: 1.4rem;
-                        display: block;
-                        transition: color .3s ease-in-out;
+        //         li {
+        //             a{
+        //                 font-size: 1.1rem;
+        //                 color: $black;
+        //                 font-weight: 700;
+        //                 text-decoration: none;
+        //                 margin-bottom: 1.4rem;
+        //                 display: block;
+        //                 transition: color .3s ease-in-out;
 
-                        &:hover {
-                            color: $logo-color;
-                        }
-                    }
-                }
-            }
-        }
+        //                 &:hover {
+        //                     color: $logo-color;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
-        .social-icons {
-            display: flex;
-            // background: lightgoldenrodyellow;
-            margin-bottom: auto;
-            margin-top: auto;
+        // .social-icons {
+        //     display: flex;
+        //     // background: lightgoldenrodyellow;
+        //     margin-bottom: auto;
+        //     margin-top: auto;
 
-            a{
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
-                text-decoration: none;
-                margin-right: 10px;
+        //     a{
+        //         // display: flex;
+        //         // justify-content: center;
+        //         // align-items: center;
+        //         text-decoration: none;
+        //         margin-right: 10px;
 
-                span {
+        //         span {
 
-                    i.fa-stack-2x {
-                        color: $grey;
-                    }
+        //             i.fa-stack-2x {
+        //                 color: $grey;
+        //             }
 
-                    i.fa-stack-1x {
-                        color: $white;
-                    }
-                }
+        //             i.fa-stack-1x {
+        //                 color: $white;
+        //             }
+        //         }
                 
-            }
+        //     }
 
-        }
+        // }
 
-        .contact {
-            // background: lightgrey;
-            margin-top: auto;
+        // .contact {
+        //     // background: lightgrey;
+        //     margin-top: auto;
 
-            .location {
-                color: $blue;
-                margin-bottom: 1rem;
-                letter-spacing: 0.1em;
-                line-height: 1.6;
+        //     .location {
+        //         color: $blue;
+        //         margin-bottom: 1rem;
+        //         letter-spacing: 0.1em;
+        //         line-height: 1.6;
 
-            }
+        //     }
 
-            .phone-number {
+        //     .phone-number {
 
-                a {
-                    color: $dark-blue;
-                    font-size: 2rem;
-                    font-weight: 700;
-                    text-decoration: none; 
-                }
-            }
-        }
+        //         a {
+        //             color: $dark-blue;
+        //             font-size: 2rem;
+        //             font-weight: 700;
+        //             text-decoration: none; 
+        //         }
+        //     }
+        // }
     }
     .welcome-jumbo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1469a8+0,00345c+100 */
-        background: $blue; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center,  $blue 0%,$dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='$dark-blue',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        grid-column: 5 / 13;
+    //     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1469a8+0,00345c+100 */
+    //     background: $blue; /* Old browsers */
+    //     background: -moz-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* FF3.6-15 */
+    //     background: -webkit-radial-gradient(center, ellipse cover,  $blue 0%, $dark-blue 100%); /* Chrome10-25,Safari5.1-6 */
+    //     background: radial-gradient(ellipse at center,  $blue 0%,$dark-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='$dark-blue',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-        img {
-            max-width: 600px;
-            max-height: 80%vh;
-            // background: darkcyan;
-        }
+    //     img {
+    //         max-width: 600px;
+    //         max-height: 80%vh;
+    //         // background: darkcyan;
+    //     }
     }
 }
